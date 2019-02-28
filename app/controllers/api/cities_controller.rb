@@ -1,6 +1,7 @@
 class Api::CitiesController < ApplicationController
   def city
-    render json: {Location: "Chicago: Second City"}
+    # render json: {Location: "Chicago: Second City"}
+    render 'city_view.json.jbuilder'
   end
 
   def time
