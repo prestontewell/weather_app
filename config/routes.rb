@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   # end
   get '/city' => 'api/cities#city'
   get '/current' => 'api/cities#time'
+  get '/fbteam' => 'api/cities#fbteam'
 end

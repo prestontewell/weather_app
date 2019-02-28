@@ -5,8 +5,15 @@ class Api::CitiesController < ApplicationController
   end
 
   def time
-    time = Time.now.strftime("%b %e, %l:%M %p")
-    render json: {Current: 'Time In Chicago',  Is: time}
+    # render json: {Current: 'Time In Chicago',  Is: time}
+    @time = Time.now.strftime("%b %e, %l:%M %p")
+    render 'time_view.json.jbuilder'
   end
+
+  def fbteam
+    render 'NFLteam_view.json.jbuilder'
+  end
+
+
 
 end

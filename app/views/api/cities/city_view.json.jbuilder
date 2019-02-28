@@ -1,1 +1,1 @@
-json.message Location: "Chicago: Second City"
+json.Location "Chicago, Second City"
