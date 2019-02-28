@@ -1,6 +1,6 @@
 class Api::CitiesController < ApplicationController
   def city
-    render json: "Chicago: Second City"
+    render json: {Location: "Chicago: Second City"}
   end
 
   def time
